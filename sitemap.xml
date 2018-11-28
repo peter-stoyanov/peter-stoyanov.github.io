@@ -14,13 +14,31 @@
   </url>
   
   <url>
+    <loc>https://peter-stoyanov.github.io/categories/bazel/</loc>
+    <lastmod>2018-11-19T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://peter-stoyanov.github.io/tags/build/</loc>
     <lastmod>2018-11-19T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://peter-stoyanov.github.io/posts/</loc>
+    <loc>https://peter-stoyanov.github.io/categories/build/</loc>
+    <lastmod>2018-11-19T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://peter-stoyanov.github.io/categories/</loc>
+    <lastmod>2018-11-19T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://peter-stoyanov.github.io/post/</loc>
     <lastmod>2018-11-19T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -32,12 +50,13 @@
   </url>
   
   <url>
-    <loc>https://peter-stoyanov.github.io/topics/</loc>
+    <loc>https://peter-stoyanov.github.io/tags/typescript/</loc>
+    <lastmod>2018-11-19T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://peter-stoyanov.github.io/tags/typescript/</loc>
+    <loc>https://peter-stoyanov.github.io/categories/typescript/</loc>
     <lastmod>2018-11-19T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Build on Your site title</title>
+    <title>Build on coreComponent</title>
     <link>https://peter-stoyanov.github.io/tags/build/</link>
-    <description>Recent content in Build on Your site title</description>
+    <description>Recent content in Build on coreComponent</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2018. All rights reserved.</copyright>

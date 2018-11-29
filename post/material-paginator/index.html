@@ -10,28 +10,30 @@
     
 
     
-    <title>
-  Category → typescript
-  
-   | Hugo Blog Title (SEO Version)
-</title>
+    <title>Extending angular material paginator</title>
 
     
     
 
 
 
+  
+  
+  <meta name="author" content="peter-stoyanov" />
+  <meta name="description" content="Rationale: - I had to extend angular material paginator by showing a few page numbers between the prev/next buttons. Unfortunately Angular material gives few extension points. I decided to go on top of their implementation integrating my changes into the library source code.
+Environment: - framework -&amp;gt; &amp;ldquo;@angular&amp;rdquo;: &amp;ldquo;^7.0.0&amp;rdquo;, - dependencies -&amp;gt; &amp;ldquo;@angular/material&amp;rdquo;: &amp;ldquo;^7.0.1&amp;rdquo;
+The page links are a separate dummy component with only presentational duties. They communicate back when the user clicks by emitting an event with the their index as a payload.">
 
   
-  <meta name="author" content="Petar Stoyanov" />
-  <meta name="description" content="A blog about software and tech" />
-
   
-  <meta name="twitter:card" content="summary" />
-  <meta name="twitter:site" content="@gohugoio" />
-  <meta name="twitter:title" content="Hugo Blog Title (SEO Version)" />
-  <meta name="twitter:description" content="A blog about software and tech" />
-  <meta name="twitter:image" content="https://peter-stoyanov.github.io/img/avatar.jpg" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@gohugoio" />
+    <meta name="twitter:title" content="Extending angular material paginator" />
+    <meta name="twitter:description" content="Rationale: - I had to extend angular material paginator by showing a few page numbers between the prev/next buttons. Unfortunately Angular material gives few extension points. I decided to go on top of their implementation integrating my changes into the library source code.
+Environment: - framework -&amp;gt; &amp;ldquo;@angular&amp;rdquo;: &amp;ldquo;^7.0.0&amp;rdquo;, - dependencies -&amp;gt; &amp;ldquo;@angular/material&amp;rdquo;: &amp;ldquo;^7.0.1&amp;rdquo;
+The page links are a separate dummy component with only presentational duties. They communicate back when the user clicks by emitting an event with the their index as a payload." />
+    <meta name="twitter:image" content="https://peter-stoyanov.github.io/img/avatar.jpg" />
+  
 
 
 
@@ -39,7 +41,7 @@
 <meta name="generator" content="Hugo 0.47.1">
 
 
-<link rel="canonical" href="https://peter-stoyanov.github.io/categories/typescript/">
+<link rel="canonical" href="https://peter-stoyanov.github.io/post/material-paginator/">
 <link rel="alternative" href="https://peter-stoyanov.github.io/index.xml" title="coreComponent" type="application/atom+xml">
 
 
@@ -136,36 +138,128 @@
 
 </header>
 
-  <section class="main entry-list">
-    <header class="list-header">
-      
-      
+  <section class="main post-detail">
+    <header class="post-header">
+      <h1 class="post-title">Extending angular material paginator</h1>
+      <p class="entry-meta"><span class="entry-time">Nov 19, 2018</span> 2 min read</p>
     </header>
     
-    
-      
-        <article class="entry-single">
+
+    <article class="post-content"><p><em>Rationale</em>:
+- I had to extend angular material paginator by showing a few page numbers between the prev/next buttons. Unfortunately Angular material gives few extension points. I decided to go on top of their implementation integrating my changes into the library source code.</p>
+
+<p><em>Environment</em>:
+- framework -&gt; &ldquo;@angular&rdquo;: &ldquo;^7.0.0&rdquo;,
+- dependencies -&gt; &ldquo;@angular/material&rdquo;: &ldquo;^7.0.1&rdquo;</p>
+
+<p>The page links are a separate dummy component with only presentational duties. They communicate back when the user clicks by emitting an event with the their index as a payload.</p>
+
+<pre><code class="language-typescript">import {
+  ChangeDetectionStrategy,
+  Component,
+  EventEmitter,
+  Input,
+  Output,
+} from '@angular/core';
+
+@Component({
+  selector: 'pagelink',
+  templateUrl: './pagelink.html',
+  styleUrls: ['./pagelink.scss'],
+  changeDetection: ChangeDetectionStrategy.OnPush,
+})
+export class PageLink {
+
+  @Input() pagelinkIndex: number;
   
-  <header class="entry-header">
-    <h3 class="entry-title"><a href="https://peter-stoyanov.github.io/post/material-paginator/" title="Extending angular material paginator" class="entry-link">Extending angular material paginator</a></h3>
-  </header>
+  @Input() selected = false;
 
-  <p class="entry-summary">Rationale: - I had to extend angular material paginator by showing a few page numbers between the prev/next buttons. Unfortunately Angular material gives few extension points. I decided to go on top of their implementation integrating my changes into the library source code.
-Environment: - framework -&gt; “@angular”: “^7.0.0”, - dependencies -&gt; “@angular/material”: “^7.0.1”
-The page links are a separate dummy component with only presentational duties. They communicate back when the user clicks by emitting an event with the their index as a payload.</p>
-  <footer class="entry-footer">
-    <p class="entry-meta"><span class="entry-time">Nov 19, 2018</span> 2 min read</p>
-    <div class="sharing">
-      <a class="share share-facebook" target="_blank" href="https://facebook.com/sharer/sharer.php?u=https%3a%2f%2fpeter-stoyanov.github.io%2fpost%2fmaterial-paginator%2f" title="Share on Facebook"></a>
-      <a class="share share-twitter" target="_blank" href="https://twitter.com/intent/tweet/?text=Extending%20angular%20material%20paginator&amp;url=https%3a%2f%2fpeter-stoyanov.github.io%2fpost%2fmaterial-paginator%2f" title="Share on Twitter"></a>
-      <a class="share share-google" target="_blank" href="https://plus.google.com/share?url=Extending%20angular%20material%20paginator&amp;url=https%3a%2f%2fpeter-stoyanov.github.io%2fpost%2fmaterial-paginator%2f" title="Share on Google+"></a>
-    </div>
-  </footer>
+  @Output() readonly page: EventEmitter&lt;number&gt; = new EventEmitter&lt;number&gt;();
+
+  constructor() { }
+
+  emitPageLinkEvent() {
+    this.page.emit(this.pagelinkIndex);
+  }
+}
+</code></pre>
+
+<pre><code class="language-html">&lt;button type=&quot;button&quot;
+        [ngClass]=&quot;{ 'selected': selected }&quot;
+        (click)=&quot;emitPageLinkEvent()&quot;
+        *ngIf=&quot;pagelinkIndex &gt;= 0&quot;&gt;
+        {{ pagelinkIndex + 1 }}
+&lt;/button&gt; 
+</code></pre>
+
+<p>Then the custom page link components are placed in <code>paginator.html</code></p>
+
+<pre><code class="language-html">&lt;pagelink *ngFor=&quot;let pagelinkIndex of availablePagelinkIndexes()&quot;
+              [pagelinkIndex]=&quot;pagelinkIndex&quot;
+              [selected]=&quot;pagelinkIndex == pageIndex&quot;
+              (page)=&quot;goToPage($event)&quot; &gt;
+&lt;/pagelink&gt;
+</code></pre>
+
+<p>We need to support them with a few new functions in the <code>paginator.ts</code> class</p>
+
+<pre><code class="language-typescript">availablePagelinkIndexes() {
+    let firstAvailableIndex: number;
+    if (!this.pageSize) {
+      return [];
+    }
+
+    if(this.pageIndex &lt; 2) {
+      firstAvailableIndex = 0;
+    
+    } else if(this.pageIndex &gt;= this.getLastPageIndex() - 2) {
+      firstAvailableIndex = this.getLastPageIndex() - 5;
+    
+    } else {
+      firstAvailableIndex = this.pageIndex - 2;
+    }
+    
+    let availableIndexes = [firstAvailableIndex];
+    this.expandIndexes(availableIndexes);
+
+    return availableIndexes;
+  }
+</code></pre>
+
+<p>Since we need maximum 5 pagelinks if available we evaluate the starting one and then expand the page options like this:</p>
+
+<pre><code class="language-typescript">private expandIndexes(arr: Array&lt;number&gt;) {
+    for (let i = 1; i &lt; 5; i++) {
+      const newIndex = arr[0] + (1) * i;
+      if (this.hasPageAtIndex(newIndex)) {
+        arr.push(newIndex);
+      }
+    }
+  }
+</code></pre>
+
+<p>The result:</p>
+
+<p><img src="https://peter-stoyanov.github.io/images/material-paginator/material-paginator.png" style="display: block; margin: auto; width: 40%; height: auto"></p>
+
+<p>You can also check out the all of <a href="https://github.com/peter-stoyanov/material-paginator">the source code</a></p>
 </article>
-
+    <footer class="post-footer">
       
-    
-    
+      <ul class="post-tags">
+        
+          <li class="post-tag"><a href="https://peter-stoyanov.github.io/tags/angular-material"><span class="tag">Angular Material</span></a></li>
+        
+          <li class="post-tag"><a href="https://peter-stoyanov.github.io/tags/paginator"><span class="tag">Paginator</span></a></li>
+        
+      </ul>
+      
+      <div class="sharing">
+        <a class="share share-facebook" target="_blank" href="https://facebook.com/sharer/sharer.php?u=https%3a%2f%2fpeter-stoyanov.github.io%2fpost%2fmaterial-paginator%2f" title="Share on Facebook"></a>
+        <a class="share share-twitter" target="_blank" href="https://twitter.com/intent/tweet/?text=Extending%20angular%20material%20paginator&amp;url=https%3a%2f%2fpeter-stoyanov.github.io%2fpost%2fmaterial-paginator%2f" title="Share on Twitter"></a>
+        <a class="share share-google" target="_blank" href="https://plus.google.com/share?url=Extending%20angular%20material%20paginator&amp;url=https%3a%2f%2fpeter-stoyanov.github.io%2fpost%2fmaterial-paginator%2f" title="Share on Google+"></a>
+      </div>
+    </footer>
   </section>
   <footer class="footer">
   <p>Copyright © 2018 coreComponent</p>

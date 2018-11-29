@@ -151,17 +151,18 @@
         <article class="entry-single">
   
   <header class="entry-header">
-    <h3 class="entry-title"><a href="https://peter-stoyanov.github.io/2018/11/19/introduction-bazel-typescript-tutorial/" title="Building TypeScript Projects with Bazel" class="entry-link">Building TypeScript Projects with Bazel</a></h3>
+    <h3 class="entry-title"><a href="https://peter-stoyanov.github.io/post/material-paginator/" title="Extending angular material paginator" class="entry-link">Extending angular material paginator</a></h3>
   </header>
 
-  <p class="entry-summary">In this blog post, we’ll make a brief introduction to what Bazel is and how we can build our TypeScript projects with it. If you’re already familiar with the problems that Bazel solves, feel free to skip to the section “Building TypeScript with Bazel.” You can find the example from this blog post in my GitHub account.
-Inside Google’s CI Google manages a massive amount of source code. There are dependencies between the individual projects, for example, the user interface of Google Cloud depends on Angular &amp; Angular Material, Angular Material depends on Angular, which depends on TypeScript.</p>
+  <p class="entry-summary">Rationale: - I had to extend angular material paginator by showing a few page numbers between the prev/next buttons. Unfortunately Angular material gives few extension points. I decided to go on top of their implementation integrating my changes into the library source code.
+Environment: - framework -&gt; “@angular”: “^7.0.0”, - dependencies -&gt; “@angular/material”: “^7.0.1”
+The page links are a separate dummy component with only presentational duties. They communicate back when the user clicks by emitting an event with the their index as a payload.</p>
   <footer class="entry-footer">
-    <p class="entry-meta"><span class="entry-time">Nov 19, 2018</span> 9 min read</p>
+    <p class="entry-meta"><span class="entry-time">Nov 19, 2018</span> 2 min read</p>
     <div class="sharing">
-      <a class="share share-facebook" target="_blank" href="https://facebook.com/sharer/sharer.php?u=https%3a%2f%2fpeter-stoyanov.github.io%2f2018%2f11%2f19%2fintroduction-bazel-typescript-tutorial%2f" title="Share on Facebook"></a>
-      <a class="share share-twitter" target="_blank" href="https://twitter.com/intent/tweet/?text=Building%20TypeScript%20Projects%20with%20Bazel&amp;url=https%3a%2f%2fpeter-stoyanov.github.io%2f2018%2f11%2f19%2fintroduction-bazel-typescript-tutorial%2f" title="Share on Twitter"></a>
-      <a class="share share-google" target="_blank" href="https://plus.google.com/share?url=Building%20TypeScript%20Projects%20with%20Bazel&amp;url=https%3a%2f%2fpeter-stoyanov.github.io%2f2018%2f11%2f19%2fintroduction-bazel-typescript-tutorial%2f" title="Share on Google+"></a>
+      <a class="share share-facebook" target="_blank" href="https://facebook.com/sharer/sharer.php?u=https%3a%2f%2fpeter-stoyanov.github.io%2fpost%2fmaterial-paginator%2f" title="Share on Facebook"></a>
+      <a class="share share-twitter" target="_blank" href="https://twitter.com/intent/tweet/?text=Extending%20angular%20material%20paginator&amp;url=https%3a%2f%2fpeter-stoyanov.github.io%2fpost%2fmaterial-paginator%2f" title="Share on Twitter"></a>
+      <a class="share share-google" target="_blank" href="https://plus.google.com/share?url=Extending%20angular%20material%20paginator&amp;url=https%3a%2f%2fpeter-stoyanov.github.io%2fpost%2fmaterial-paginator%2f" title="Share on Google+"></a>
     </div>
   </footer>
 </article>

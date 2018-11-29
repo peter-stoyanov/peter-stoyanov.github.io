@@ -13,13 +13,14 @@
     
     
     <item>
-      <title>Building TypeScript Projects with Bazel</title>
-      <link>https://peter-stoyanov.github.io/2018/11/19/introduction-bazel-typescript-tutorial/</link>
+      <title>Extending angular material paginator</title>
+      <link>https://peter-stoyanov.github.io/post/material-paginator/</link>
       <pubDate>Mon, 19 Nov 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://peter-stoyanov.github.io/2018/11/19/introduction-bazel-typescript-tutorial/</guid>
-      <description>In this blog post, we&amp;rsquo;ll make a brief introduction to what Bazel is and how we can build our TypeScript projects with it. If you&amp;rsquo;re already familiar with the problems that Bazel solves, feel free to skip to the section &amp;ldquo;Building TypeScript with Bazel.&amp;rdquo; You can find the example from this blog post in my GitHub account.
-Inside Google&amp;rsquo;s CI Google manages a massive amount of source code. There are dependencies between the individual projects, for example, the user interface of Google Cloud depends on Angular &amp;amp; Angular Material, Angular Material depends on Angular, which depends on TypeScript.</description>
+      <guid>https://peter-stoyanov.github.io/post/material-paginator/</guid>
+      <description>Rationale: - I had to extend angular material paginator by showing a few page numbers between the prev/next buttons. Unfortunately Angular material gives few extension points. I decided to go on top of their implementation integrating my changes into the library source code.
+Environment: - framework -&amp;gt; &amp;ldquo;@angular&amp;rdquo;: &amp;ldquo;^7.0.0&amp;rdquo;, - dependencies -&amp;gt; &amp;ldquo;@angular/material&amp;rdquo;: &amp;ldquo;^7.0.1&amp;rdquo;
+The page links are a separate dummy component with only presentational duties. They communicate back when the user clicks by emitting an event with the their index as a payload.</description>
     </item>
     
   </channel>

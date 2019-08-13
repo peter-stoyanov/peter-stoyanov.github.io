@@ -5,24 +5,32 @@
     <link>https://peter-stoyanov.github.io/categories/</link>
     <description>Recent content in Categories on coreComponent</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <copyright>&amp;copy; 2018. All rights reserved.</copyright>
+    <language>en</language>
     <lastBuildDate>Mon, 19 Nov 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://peter-stoyanov.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Angular</title>
-      <link>https://peter-stoyanov.github.io/categories/angular/</link>
+      <title>Bazel</title>
+      <link>https://peter-stoyanov.github.io/categories/bazel/</link>
       <pubDate>Mon, 19 Nov 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://peter-stoyanov.github.io/categories/angular/</guid>
+      <guid>https://peter-stoyanov.github.io/categories/bazel/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Typescript</title>
+      <title>Build</title>
+      <link>https://peter-stoyanov.github.io/categories/build/</link>
+      <pubDate>Mon, 19 Nov 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://peter-stoyanov.github.io/categories/build/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>TypeScript</title>
       <link>https://peter-stoyanov.github.io/categories/typescript/</link>
       <pubDate>Mon, 19 Nov 2018 00:00:00 +0000</pubDate>
       

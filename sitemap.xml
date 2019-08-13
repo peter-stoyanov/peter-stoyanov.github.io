@@ -3,30 +3,36 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://peter-stoyanov.github.io/post/material-paginator/</loc>
-    <lastmod>2018-11-19T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://peter-stoyanov.github.io/categories/angular/</loc>
+    <loc>https://peter-stoyanov.github.io/tags/bazel/</loc>
     <lastmod>2018-11-19T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://peter-stoyanov.github.io/tags/angular-material/</loc>
+    <loc>https://peter-stoyanov.github.io/categories/bazel/</loc>
     <lastmod>2018-11-19T00:00:00+00:00</lastmod>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://peter-stoyanov.github.io/tags/build/</loc>
+    <lastmod>2018-11-19T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://peter-stoyanov.github.io/categories/build/</loc>
+    <lastmod>2018-11-19T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://peter-stoyanov.github.io/2018/11/19/introduction-bazel-typescript-tutorial/</loc>
+    <lastmod>2018-11-19T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://peter-stoyanov.github.io/categories/</loc>
-    <lastmod>2018-11-19T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://peter-stoyanov.github.io/tags/paginator/</loc>
     <lastmod>2018-11-19T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -39,6 +45,12 @@
   
   <url>
     <loc>https://peter-stoyanov.github.io/tags/</loc>
+    <lastmod>2018-11-19T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://peter-stoyanov.github.io/tags/typescript/</loc>
     <lastmod>2018-11-19T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>

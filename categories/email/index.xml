@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Email on Core component</title>
+    <link>https://peter-stoyanov.github.io/categories/email/</link>
+    <description>Recent content in Email on Core component</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Wed, 28 Aug 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://peter-stoyanov.github.io/categories/email/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Using Gmail API with Node.js</title>
+      <link>https://peter-stoyanov.github.io/posts/gmail_connector/</link>
+      <pubDate>Wed, 28 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://peter-stoyanov.github.io/posts/gmail_connector/</guid>
+      <description>Using Gmail API with Node.js Accessing gmail messages from a backend app in a Node.js environment
+Getting started This sample was the base script from which I started. On this page you need to click on generate credentials and save the downloaded credentials.json file in the project workspace under credentials folder.
+The first time you run the project you&amp;rsquo;ll be asked to visit an URL and authorize the project for specific scopes.</description>
+    </item>
+    
+  </channel>
+</rss>

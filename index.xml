@@ -1,24 +1,59 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>coreComponent</title>
+    <title>Core component</title>
     <link>https://peter-stoyanov.github.io/</link>
-    <description>Recent content on coreComponent</description>
+    <description>Recent content on Core component</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
-    <lastBuildDate>Mon, 19 Nov 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 28 Aug 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://peter-stoyanov.github.io/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Building TypeScript Projects with Bazel</title>
-      <link>https://peter-stoyanov.github.io/2018/11/19/introduction-bazel-typescript-tutorial/</link>
-      <pubDate>Mon, 19 Nov 2018 00:00:00 +0000</pubDate>
+      <title>Python environments</title>
+      <link>https://peter-stoyanov.github.io/posts/python_environment/</link>
+      <pubDate>Wed, 28 Aug 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://peter-stoyanov.github.io/2018/11/19/introduction-bazel-typescript-tutorial/</guid>
-      <description>In this blog post, we&amp;rsquo;ll make a brief introduction to what Bazel is and how we can build our TypeScript projects with it. If you&amp;rsquo;re already familiar with the problems that Bazel solves, feel free to skip to the section &amp;ldquo;Building TypeScript with Bazel.&amp;rdquo; You can find the example from this blog post in my GitHub account.
-Inside Google&amp;rsquo;s CI Google manages a massive amount of source code. There are dependencies between the individual projects, for example, the user interface of Google Cloud depends on Angular &amp;amp; Angular Material, Angular Material depends on Angular, which depends on TypeScript.</description>
+      <guid>https://peter-stoyanov.github.io/posts/python_environment/</guid>
+      <description> Install package for virtual environment support python -m pip install virtualenv  python -m virtualenv env  // in folder with env
+source ./env/Scripts/activate  which python = should be path to project folder, not system wide
+python -m pip freeze &amp;gt; requirements.txt  python -m pip install -r requirements.txt  </description>
+    </item>
+    
+    <item>
+      <title>Using Gmail API with Node.js</title>
+      <link>https://peter-stoyanov.github.io/posts/gmail_connector/</link>
+      <pubDate>Wed, 28 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://peter-stoyanov.github.io/posts/gmail_connector/</guid>
+      <description>Using Gmail API with Node.js Accessing gmail messages from a backend app in a Node.js environment
+Getting started This sample was the base script from which I started. On this page you need to click on generate credentials and save the downloaded credentials.json file in the project workspace under credentials folder.
+The first time you run the project you&amp;rsquo;ll be asked to visit an URL and authorize the project for specific scopes.</description>
+    </item>
+    
+    <item>
+      <title>Using testcafe for a month</title>
+      <link>https://peter-stoyanov.github.io/posts/testcafe_tips/</link>
+      <pubDate>Wed, 28 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://peter-stoyanov.github.io/posts/testcafe_tips/</guid>
+      <description>Using testcafe for a month Testcafe is a Node.js based framework for running automated tests written in Javascript or Typescript.
+Getting started is quite easy and the learning curve is not steep.
+There are a few things to keep in mind that I want to share from using testcafe framework.
+ Although the framework
+ If you&amp;rsquo;re not sure if your tests are capable of dealing with concurrent execution stay away from the -c flag when running them.</description>
+    </item>
+    
+    <item>
+      <title>Write custom TS lint rule</title>
+      <link>https://peter-stoyanov.github.io/posts/ts_lint_rule/</link>
+      <pubDate>Wed, 28 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://peter-stoyanov.github.io/posts/ts_lint_rule/</guid>
+      <description>TS lint custom ban rule TS linter allows for the creation of custom rules.
+One such example is a rule which traverses the source code and looks for a value which is not allowed - in this case the word &amp;lsquo;only&amp;rsquo;
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 32  import * as Lint from &amp;#39;tslint&amp;#39;; import * as ts from &amp;#39;typescript&amp;#39;; export class Rule extends Lint.</description>
     </item>
     
   </channel>

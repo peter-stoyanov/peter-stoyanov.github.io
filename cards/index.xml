@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Cards on </title>
+    <link>/cards/</link>
+    <description>Recent content in Cards on </description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sun, 08 Apr 2018 21:49:02 +0530</lastBuildDate>
+    
+	<atom:link href="/cards/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Blog</title>
+      <link>/cards/blog/</link>
+      <pubDate>Wed, 31 Jan 2018 00:34:29 +0530</pubDate>
+      
+      <guid>/cards/blog/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Instructables</title>
+      <link>/cards/instructables/</link>
+      <pubDate>Tue, 30 Jan 2018 23:26:40 +0530</pubDate>
+      
+      <guid>/cards/instructables/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Hackster</title>
+      <link>/cards/hackster/</link>
+      <pubDate>Tue, 30 Jan 2018 00:26:04 +0530</pubDate>
+      
+      <guid>/cards/hackster/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Patreon</title>
+      <link>/cards/patreon/</link>
+      <pubDate>Tue, 30 Jan 2018 23:22:08 +0530</pubDate>
+      
+      <guid>/cards/patreon/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>The ProtoElectric Effect</title>
+      <link>/cards/protoelectric/</link>
+      <pubDate>Tue, 30 Jan 2018 23:22:08 +0530</pubDate>
+      
+      <guid>/cards/protoelectric/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Keybase</title>
+      <link>/cards/keybase/</link>
+      <pubDate>Tue, 30 Jan 2018 23:21:51 +0530</pubDate>
+      
+      <guid>/cards/keybase/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>My Goodwall Profile</title>
+      <link>/cards/goodwall/</link>
+      <pubDate>Sun, 08 Apr 2018 21:49:02 +0530</pubDate>
+      
+      <guid>/cards/goodwall/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

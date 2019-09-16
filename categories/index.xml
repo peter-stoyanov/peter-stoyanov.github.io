@@ -1,38 +1,100 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Categories on coreComponent</title>
+    <title>Categories on Core component</title>
     <link>https://peter-stoyanov.github.io/categories/</link>
-    <description>Recent content in Categories on coreComponent</description>
+    <description>Recent content in Categories on Core component</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
-    <lastBuildDate>Mon, 19 Nov 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 28 Aug 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://peter-stoyanov.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Bazel</title>
-      <link>https://peter-stoyanov.github.io/categories/bazel/</link>
-      <pubDate>Mon, 19 Nov 2018 00:00:00 +0000</pubDate>
+      <title>Automation testing</title>
+      <link>https://peter-stoyanov.github.io/categories/automation-testing/</link>
+      <pubDate>Wed, 28 Aug 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://peter-stoyanov.github.io/categories/bazel/</guid>
+      <guid>https://peter-stoyanov.github.io/categories/automation-testing/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Build</title>
-      <link>https://peter-stoyanov.github.io/categories/build/</link>
-      <pubDate>Mon, 19 Nov 2018 00:00:00 +0000</pubDate>
+      <title>Dependencies</title>
+      <link>https://peter-stoyanov.github.io/categories/dependencies/</link>
+      <pubDate>Wed, 28 Aug 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://peter-stoyanov.github.io/categories/build/</guid>
+      <guid>https://peter-stoyanov.github.io/categories/dependencies/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>TypeScript</title>
+      <title>e2e testing</title>
+      <link>https://peter-stoyanov.github.io/categories/e2e-testing/</link>
+      <pubDate>Wed, 28 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://peter-stoyanov.github.io/categories/e2e-testing/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Email</title>
+      <link>https://peter-stoyanov.github.io/categories/email/</link>
+      <pubDate>Wed, 28 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://peter-stoyanov.github.io/categories/email/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Gmail API</title>
+      <link>https://peter-stoyanov.github.io/categories/gmail-api/</link>
+      <pubDate>Wed, 28 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://peter-stoyanov.github.io/categories/gmail-api/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Linting</title>
+      <link>https://peter-stoyanov.github.io/categories/linting/</link>
+      <pubDate>Wed, 28 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://peter-stoyanov.github.io/categories/linting/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Node.js</title>
+      <link>https://peter-stoyanov.github.io/categories/node.js/</link>
+      <pubDate>Wed, 28 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://peter-stoyanov.github.io/categories/node.js/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Python</title>
+      <link>https://peter-stoyanov.github.io/categories/python/</link>
+      <pubDate>Wed, 28 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://peter-stoyanov.github.io/categories/python/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Testcafe</title>
+      <link>https://peter-stoyanov.github.io/categories/testcafe/</link>
+      <pubDate>Wed, 28 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://peter-stoyanov.github.io/categories/testcafe/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Typescript</title>
       <link>https://peter-stoyanov.github.io/categories/typescript/</link>
-      <pubDate>Mon, 19 Nov 2018 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 28 Aug 2019 00:00:00 +0000</pubDate>
       
       <guid>https://peter-stoyanov.github.io/categories/typescript/</guid>
       <description></description>

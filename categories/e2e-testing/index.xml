@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>e2e testing on Core component</title>
+    <link>https://peter-stoyanov.github.io/categories/e2e-testing/</link>
+    <description>Recent content in e2e testing on Core component</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Wed, 28 Aug 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://peter-stoyanov.github.io/categories/e2e-testing/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Using testcafe for a month</title>
+      <link>https://peter-stoyanov.github.io/posts/testcafe_tips/</link>
+      <pubDate>Wed, 28 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://peter-stoyanov.github.io/posts/testcafe_tips/</guid>
+      <description>Using testcafe for a month Testcafe is a Node.js based framework for running automated tests written in Javascript or Typescript.
+Getting started is quite easy and the learning curve is not steep.
+There are a few things to keep in mind that I want to share from using testcafe framework.
+ Although the framework
+ If you&amp;rsquo;re not sure if your tests are capable of dealing with concurrent execution stay away from the -c flag when running them.</description>
+    </item>
+    
+  </channel>
+</rss>

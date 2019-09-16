@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Dependencies on Core component</title>
+    <link>https://peter-stoyanov.github.io/categories/dependencies/</link>
+    <description>Recent content in Dependencies on Core component</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Wed, 28 Aug 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://peter-stoyanov.github.io/categories/dependencies/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Python environments</title>
+      <link>https://peter-stoyanov.github.io/posts/python_environment/</link>
+      <pubDate>Wed, 28 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://peter-stoyanov.github.io/posts/python_environment/</guid>
+      <description> Install package for virtual environment support python -m pip install virtualenv  python -m virtualenv env  // in folder with env
+source ./env/Scripts/activate  which python = should be path to project folder, not system wide
+python -m pip freeze &amp;gt; requirements.txt  python -m pip install -r requirements.txt  </description>
+    </item>
+    
+  </channel>
+</rss>
